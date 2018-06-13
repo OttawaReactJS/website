@@ -5,10 +5,12 @@ import { render } from 'react-dom';
 import './global.styled';
 
 import Header from './components/header';
+import NextMeetup from './components/next_meetup';
 
 const Main = () => (
     <Fragment>
         <Header />
+        <NextMeetup />
     </Fragment>
 );
 
