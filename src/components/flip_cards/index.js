@@ -18,26 +18,24 @@ const FlipCards = ({ cardData }) => {
     return cardData.map(({ id, title, content }) => {
       return (
         <FlipCard>
-        <FlipCardFront>
-          <FlipCardContent>
-            <FlipCardTitle>{title}</FlipCardTitle>
-            <FlipCardDivider />
-            <FlipCardDetails>{content}</FlipCardDetails>
-          </FlipCardContent>
-        </FlipCardFront>
-        <FlipCardBack>
-          <FlipCardContent>
-              <FlipCardAvatar> 
-              </FlipCardAvatar>
+          <FlipCardFront>
+            <FlipCardContent>
+              <FlipCardTitle>{title}</FlipCardTitle>
+              <FlipCardDivider />
+              <FlipCardDetails>{content}</FlipCardDetails>
+            </FlipCardContent>
+          </FlipCardFront>
+          <FlipCardBack>
+            <FlipCardContent>
+              <FlipCardAvatar />
               <FlipCardLinks>
-                <a href="#twitter" >Twitter</a>
-                <a href="#github" >Github</a>
-                <a href="#github" >Website</a>
+                <a href="#twitter">Twitter</a>
+                <a href="#github">Github</a>
+                <a href="#github">Website</a>
               </FlipCardLinks>
-          </FlipCardContent>
-        </FlipCardBack>
-      </FlipCard>
-        
+            </FlipCardContent>
+          </FlipCardBack>
+        </FlipCard>
       );
     });
   };
@@ -56,8 +54,10 @@ FlipCards.propTypes = {
 
 export default FlipCards;
 
-{/* <FlipCard key={id}>
+{
+  /* <FlipCard key={id}>
           <FlipCardTitle>{title}</FlipCardTitle>
           <FlipCardDivider />
           <FlipCardContent>{content}</FlipCardContent>
-        </FlipCard> */}
+        </FlipCard> */
+}

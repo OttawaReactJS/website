@@ -28,21 +28,21 @@ export const FlipCard = styled.div`
     &:last-child {
       transform: rotateY(0deg);
     }
-  } 
+  }
 
   @media (min-width: 1400px) {
     flex: 0 0 18rem;
     height: 2rem;
   }
 
-  @media only screen and (hover: none) { 
-      height: 58rem;
+  @media only screen and (hover: none) {
+    height: 58rem;
   }
 `;
 
 export const FlipCardSide = styled.div`
   height: 32rem;
-  transition: all .8s ease;
+  transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -51,16 +51,16 @@ export const FlipCardSide = styled.div`
   backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 1rem 1.4rem 4rem rgba(48,48,58,.3);
+  box-shadow: 1rem 1.4rem 4rem rgba(48, 48, 58, 0.3);
   display: flex;
 
   @media (min-width: 1400px) {
     height: 22rem;
   }
 
-  @media only screen and (hover: none) { 
-      height: 58rem;
-      position: relative;
+  @media only screen and (hover: none) {
+    height: 58rem;
+    position: relative;
   }
 `;
 
@@ -68,10 +68,10 @@ export const FlipCardFront = styled(FlipCardSide)`
   background-image: linear-gradient(
     to right bottom,
     ${colors.purple},
-    ${colors.purple.dark} 
+    ${colors.purple.dark}
   );
 
-  @media only screen and (hover: none) { 
+  @media only screen and (hover: none) {
     height: 30rem;
     padding-bottom: 5rem;
   }
@@ -79,22 +79,17 @@ export const FlipCardFront = styled(FlipCardSide)`
 
 export const FlipCardBack = styled(FlipCardSide)`
   transform: rotateY(180deg);
-  background-image: linear-gradient(
-    to right bottom,
-    ${colors.black},
-    #1D1D1D  
-  );
+  background-image: linear-gradient(to right bottom, ${colors.black}, #1d1d1d);
 
-  @media only screen and (hover: none) { 
-      transform: rotateY(0);
-      -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-      justify-content: flex-end;
-      height: 30rem;
-      padding-top: 2rem;
-      margin-top: -5rem;
+  @media only screen and (hover: none) {
+    transform: rotateY(0);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    justify-content: flex-end;
+    height: 30rem;
+    padding-top: 2rem;
+    margin-top: -5rem;
   }
-  
 `;
 
 export const FlipCardContent = styled.div`
@@ -112,7 +107,7 @@ export const FlipCardTitle = styled.div`
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 2rem;
-  
+
   @media (min-width: 1400px) {
     font-weight: 200;
     font-size: 1.6rem;
@@ -141,14 +136,10 @@ export const FlipCardAvatar = styled.div`
   height: 14rem;
   width: 14rem;
   border-radius: 50%;
-  border: 3px solid #DDDDDD;
-  box-shadow: 1rem 1.4rem 4rem rgba(1,1,1, .4);
+  border: 3px solid #dddddd;
+  box-shadow: 1rem 1.4rem 4rem rgba(1, 1, 1, 0.4);
 
-  background-image: linear-gradient(
-    to right bottom,
-    #707070,
-    #1f1f1f
-  );
+  background-image: linear-gradient(to right bottom, #707070, #1f1f1f);
 
   @media (min-width: 1400px) {
     height: 8rem;
@@ -179,9 +170,8 @@ export const FlipCardLinks = styled.div`
     }
 
     @media (min-width: 1400px) {
-      margin-bottom: .6rem;
+      margin-bottom: 0.6rem;
       letter-spacing: 2px;
     }
   }
 `;
-
