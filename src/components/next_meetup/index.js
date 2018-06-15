@@ -14,18 +14,18 @@ import {
 const talks = [
   {
     id: '00001',
-    title: 'Presenter 1',
-    content: 'Topic 1',
+    title: 'Presener 1asdfaesf',
+    content: 'Topicadfmjvaskfjhb lkjadflhjas  ;kahjdlfkjgasdf 1',
   },
   {
     id: '00002',
-    title: 'Presenter 2',
-    content: 'Topic 2',
+    title: 'Presenter asdfaesagaseg2',
+    content: 'Topim,nbdfk as fasdfkljadkjlkadfc 2',
   },
   {
     id: '00003',
-    title: 'Presenter 3',
-    content: 'Topic 3',
+    title: 'Presasdfefenter 3fd',
+    content: 'Toadsf,mnbadf ;likadflasdf a;kfhlaksdjfpic 3',
   },
 ];
 

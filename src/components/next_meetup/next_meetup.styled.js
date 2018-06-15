@@ -25,6 +25,16 @@ export const NextMeetupDetails = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-width: 90rem;
+
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+
+  @media (min-width: 1400px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 
 export const NextMeetupSection = styled.section`
@@ -48,13 +58,14 @@ export const NextMeetupDetailsContainers = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 `;
 
 export const NextMeetupHeader = styled.h2`
   font-weight: 100;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0;
   margin-bottom: 3rem;
 `;
@@ -62,8 +73,15 @@ export const NextMeetupHeader = styled.h2`
 export const NextMeetupInfo = styled.div`
   width: 100%;
   font-weight: 200;
+  font-size: 1.6rem;
+  max-width: 52rem;
+
   &:not(:last-child) {
     margin-bottom: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    font-size: 2rem;
   }
 `;
 
@@ -75,4 +93,6 @@ export const NextMeetupTalksHeader = styled.h3`
   text-transform: uppercase;
   text-align: center;
   font-weight: 100;
+  font-size: 2.5rem;
+  margin: 3rem 0;
 `;

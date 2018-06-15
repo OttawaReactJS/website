@@ -1,22 +1,42 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 import {
-  FlipCard,
-  FlipCardContent,
-  FlipCardDivider,
   FlipCardsContainer,
+  FlipCard,
+  FlipCardFront,
+  FlipCardBack,
+  FlipCardContent,
   FlipCardTitle,
+  FlipCardDivider,
+  FlipCardDetails,
+  FlipCardAvatar,
+  FlipCardLinks,
 } from './flip_cards.styled';
 
 const FlipCards = ({ cardData }) => {
   const renderCards = () => {
     return cardData.map(({ id, title, content }) => {
       return (
-        <FlipCard key={id}>
-          <FlipCardTitle>{title}</FlipCardTitle>
-          <FlipCardDivider />
-          <FlipCardContent>{content}</FlipCardContent>
-        </FlipCard>
+        <FlipCard>
+        <FlipCardFront>
+          <FlipCardContent>
+            <FlipCardTitle>{title}</FlipCardTitle>
+            <FlipCardDivider />
+            <FlipCardDetails>{content}</FlipCardDetails>
+          </FlipCardContent>
+        </FlipCardFront>
+        <FlipCardBack>
+          <FlipCardContent>
+              <FlipCardAvatar> 
+              </FlipCardAvatar>
+              <FlipCardLinks>
+                <a href="#twitter" >Twitter</a>
+                <a href="#github" >Github</a>
+              </FlipCardLinks>
+          </FlipCardContent>
+        </FlipCardBack>
+      </FlipCard>
+        
       );
     });
   };
@@ -34,3 +54,9 @@ FlipCards.propTypes = {
 };
 
 export default FlipCards;
+
+{/* <FlipCard key={id}>
+          <FlipCardTitle>{title}</FlipCardTitle>
+          <FlipCardDivider />
+          <FlipCardContent>{content}</FlipCardContent>
+        </FlipCard> */}
