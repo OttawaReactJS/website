@@ -69,6 +69,7 @@ export const NextMeetupDetailsContainers = styled.div`
   flex-direction: column;
   align-items: center;
   flex: 1;
+  text-align: center;
 `;
 
 export const NextMeetupHeader = styled.h2`
