@@ -1,13 +1,27 @@
 import React from 'react';
-
-import { Wrapper, BackgroundImage, Title } from './header.styled';
+import {
+  BackgroundImage,
+  HeaderInner,
+  LogoWrapper,
+  Title,
+  TitleContainer,
+  Wrapper,
+} from './header.styled';
 import ReactLogo from './logo.js';
 
 const Header = () => (
   <Wrapper>
     <BackgroundImage />
-    <ReactLogo />
-    <Title> Ottawa React </Title>
+    <HeaderInner>
+      <LogoWrapper>
+        <ReactLogo />
+      </LogoWrapper>
+      <TitleContainer>
+        <Title>Empathy.</Title>
+        <Title>Inclusion. </Title>
+        <Title>Empowerment.</Title>
+      </TitleContainer>
+    </HeaderInner>
   </Wrapper>
 );
 

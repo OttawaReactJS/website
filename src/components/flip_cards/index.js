@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 import {
-  FlipCardsContainer,
   FlipCard,
-  FlipCardFront,
+  FlipCardAvatar,
   FlipCardBack,
   FlipCardContent,
-  FlipCardTitle,
-  FlipCardDivider,
   FlipCardDetails,
-  FlipCardAvatar,
+  FlipCardDivider,
+  FlipCardFront,
   FlipCardLinks,
+  FlipCardsContainer,
+  FlipCardTitle,
 } from './flip_cards.styled';
 
 const FlipCards = ({ cardData }) => {
@@ -53,11 +53,3 @@ FlipCards.propTypes = {
 };
 
 export default FlipCards;
-
-{
-  /* <FlipCard key={id}>
-          <FlipCardTitle>{title}</FlipCardTitle>
-          <FlipCardDivider />
-          <FlipCardContent>{content}</FlipCardContent>
-        </FlipCard> */
-}

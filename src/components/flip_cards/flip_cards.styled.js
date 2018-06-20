@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import colors from '../utils/colors';
 
-import Logo from '../header/images/ReactOttawaLogo.svg';
-
 export const FlipCardsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
