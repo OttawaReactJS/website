@@ -13,6 +13,16 @@ export const ImageWrapper = styled.div`
   }
 `;
 
+export const Notice = styled.p`
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+
+  @media (min-width: 400px) {
+    margin: 3rem;
+  }
+`;
+
 export const NextMeetupLocation = styled.div`
   background-image: url(${mapImage});
   background-color: ${colors.white};
@@ -59,6 +69,7 @@ export const NextMeetupDetailsContainers = styled.div`
   flex-direction: column;
   align-items: center;
   flex: 1;
+  text-align: center;
 `;
 
 export const NextMeetupHeader = styled.h2`
@@ -87,6 +98,11 @@ export const NextMeetupInfo = styled.div`
 
 export const NextMeetupTalks = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
 `;
 
 export const NextMeetupTalksHeader = styled.h3`

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import FlipCards from '../flip_cards';
 import {
   ImageWrapper,
   NextMeetupDetails,
@@ -8,7 +7,7 @@ import {
   NextMeetupInfo,
   NextMeetupSection,
   NextMeetupTalks,
-  NextMeetupTalksHeader,
+  Notice,
 } from './next_meetup.styled';
 
 const talks = [
@@ -53,8 +52,15 @@ const NextMeetup = () => {
             Where: Rebel.com - 12 York st. 3rd Floor, Ottawa K1N 5S6
           </NextMeetupInfo>
           <NextMeetupTalks>
-            <NextMeetupTalksHeader>the talks</NextMeetupTalksHeader>
-            <FlipCards cardData={talks} />
+            <Notice>
+              🙋‍♂️🙋‍ <br />
+              <br />Interested in speaking? Send us an{' '}
+              <a href="mailto:ottawareactjs@gmail.com">email</a> or direct
+              message on <a href="https://twitter.com/ReactOttawa">Twitter</a>,
+              we would like you to present!
+            </Notice>
+            {/* <NextMeetupTalksHeader>the talks</NextMeetupTalksHeader> */}
+            {/* <FlipCards cardData={talks} /> */}
           </NextMeetupTalks>
         </NextMeetupDetailsContainers>
       </NextMeetupDetails>

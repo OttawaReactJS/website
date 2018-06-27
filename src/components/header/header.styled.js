@@ -1,7 +1,49 @@
 import styled from 'styled-components';
 import colors from '../utils/colors';
-
 import background from './images/header.jpg';
+
+export const Title = styled.h1`
+  margin: 0;
+  padding: 0;
+  color: ${colors.white};
+  font-size: 3rem;
+  font-weight: 300;
+  @media (min-width: 600px) {
+    font-size: 6rem;
+  }
+`;
+
+export const LogoWrapper = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: 400px;
+  min-width: 200px;
+`;
+
+export const TitleContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+
+  border: 2px solid ${colors.white};
+  border-left: none;
+  border-right: none;
+`;
+
+export const HeaderInner = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
+`;
 
 export const Wrapper = styled.section`
     position: relative;
@@ -39,15 +81,5 @@ export const BackgroundImage = styled.div`
     height: 100%;
     background: ${colors.text};
     opacity: 0.65;
-  }
-`;
-
-export const Title = styled.h1`
-  margin: 0;
-  padding: 0;
-  color: ${colors.white};
-  font-size: 3rem;
-  @media (min-width: 600px) {
-    font-size: 6rem;
   }
 `;

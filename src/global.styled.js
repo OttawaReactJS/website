@@ -1,6 +1,7 @@
 import { injectGlobal } from 'styled-components';
 
 injectGlobal`
+    @import url('https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css');
     /* latin-ext */
     @font-face {
         font-family: 'Fira Sans';
