@@ -34,7 +34,7 @@ const NextMeetup = () => {
       <ImageWrapper>
         <iframe
           title="Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.0950261965554!2d-75.69184578416548!3d45.42758574390653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04fdfb178c43%3A0x2153e99f88f7fd16!2sRebel.com!5e0!3m2!1sen!2sca!4v1537275935926"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.43906077822!2d-75.91320998402338!3d45.33994857909951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd1fff3e4b85b45%3A0xbdcdcef712110bf!2sQlik!5e0!3m2!1sen!2sca!4v1538424142281"
           width="600"
           height="450"
           frameborder="0"
@@ -46,10 +46,10 @@ const NextMeetup = () => {
         <NextMeetupDetailsContainers>
           <NextMeetupHeader>next meetup</NextMeetupHeader>
           <NextMeetupInfo>
-            When: September 27th, 2018 @ 6:30pm to 8:30pm
+            When: October 25th, 2018 @ 6:30pm to 8:30pm
           </NextMeetupInfo>
           <NextMeetupInfo>
-            Where: Rebel.com - 377 Dalhousie street Suite 201
+            Where: Qlik Office - 390 March Road, Unit 100 · Kanata
           </NextMeetupInfo>
           <NextMeetupTalks>
             <Notice>
@@ -59,8 +59,6 @@ const NextMeetup = () => {
               message on <a href="https://twitter.com/ReactOttawa">Twitter</a>,
               we would like you to present!
             </Notice>
-            {/* <NextMeetupTalksHeader>the talks</NextMeetupTalksHeader> */}
-            {/* <FlipCards cardData={talks} /> */}
           </NextMeetupTalks>
         </NextMeetupDetailsContainers>
       </NextMeetupDetails>
