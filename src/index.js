@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
 import { render } from 'react-dom';
 import Footer from './components/footer';
-import Header from './components/header';
+// import Header from './components/header';
 import NextMeetup from './components/next_meetup';
 import Section from './components/section';
 import Code from './components/code';
+import Header from './components/header';
 
 import headerCode from './assets/header-code.png';
 
@@ -15,7 +16,7 @@ const Main = () => (
   <Fragment>
     <Section>
       <Code src={headerCode} aria-label="React code about a button" />
-      <h1>Ottawa React</h1>
+      <Header />
       {/* Header */}
       {/* solid React blue-ish background */}
       {/* Img / gif of JSX overlay */}
@@ -36,7 +37,7 @@ const Main = () => (
       {/* links to meetup, twitter, email */}
       {/* sub footer */}
     </Section>
-    <Header />
+    // <Header />
     <NextMeetup />
     <Footer />
   </Fragment>
