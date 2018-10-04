@@ -15,7 +15,6 @@ import './global.styled';
 const Main = () => (
   <Fragment>
     <Section>
-      <Code src={headerCode} aria-label="React code about a button" />
       <Header />
       {/* Header */}
       {/* solid React blue-ish background */}
