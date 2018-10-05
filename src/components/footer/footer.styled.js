@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 4rem;
-  background-color: ${colors.purple.light};
+  background-color: ${colors.blue};
 `;
 
 export const MadeWith = styled.span`

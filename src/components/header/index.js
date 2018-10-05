@@ -8,34 +8,34 @@ const Link = styled.span`
 `;
 
 const T = styled.h1`
-  position: relative;
-  font-size: 10rem;
+  line-height: 7rem;
   width: min-content;
-  line-height: 9rem;
-  text-align: right;
+  text-align: right
+  font-size: 8rem;
   user-select: none;
   background: rgba(96, 217, 251, 0.9);
-  padding: 3rem;
   border-radius: 4px;
-  margin-right: 10vw;
+
+
+  @media (max-width: 1300px) {
+    padding: 4rem;
+    position: absolute;
+  }
+
+  @media(max-width: 500px)  {
+    font-size: 5rem;
+    line-height: 4rem;
+    padding: 2rem;
+  }
 `;
 
 const Container = styled.div`
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
-
-  &:before {
-    position: absolute;
-    content: '';
-    width: 100vw;
-    background: #61dafb;
-    height: 390px;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-  }
 `;
 
 const TitleContainer = Container.extend`
@@ -44,19 +44,16 @@ const TitleContainer = Container.extend`
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  width: auto;
   z-index: 1;
-
-  &:before {
-    background: transparent;
-  }
 `;
 
 const MeetupLink = Container.withComponent('a').extend`
   position: absolute;
   left: 0;
   bottom: 0;
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 100px;
+  max-height: 100px;
   background: #24272e;
 
   display: flex;
@@ -64,23 +61,16 @@ const MeetupLink = Container.withComponent('a').extend`
   justify-content: center;
   user-select: none;
   text-decoration: none;
-
-  &:before {
-    background: transparent;
-  }
 `;
 
 const Code = Container.extend`
-  position: absolute;
-  left: 50%;
-  top: 50%;
   max-height: 750px;
-  transform: translateY(-50%);
   user-select: none;
   z-index: -1;
+  width: auto;
 
-  &:before {
-    background: transparent;
+  @media (max-width: 500px) {
+    height: 400px;
   }
 
   img {
@@ -94,7 +84,7 @@ export default function Title() {
       <TitleContainer>
         <T>React Ottawa</T>
         <Code>
-          <img src={code} />
+          <img src={code} alt="some React code" aria-label="some React code" />
         </Code>
       </TitleContainer>
       <MeetupLink href="https://www.meetup.com/Ottawa-ReactJS-Meetup/">
@@ -103,63 +93,3 @@ export default function Title() {
     </Container>
   );
 }
-
-// <div
-//   style={{
-//     position: 'relative',
-//     display: 'flex',
-//     flexDirection: 'column',
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     width: '100vw',
-//     height: '100vh',
-//     backgroundSize: 'cover',
-//   }}
-// >
-//   <div
-//     style={{
-//       display: 'flex',
-//       justifyContent: 'flex-start',
-//       alignItems: 'center',
-//     }}
-//   >
-//     <h1
-//       style={{
-//         fontSize: '5rem',
-//         fontWeight: 400,
-//         textAlign: 'center',
-//         userSelect: 'none',
-//       }}
-//     >
-//       Ottawa React
-//     </h1>
-//   </div>
-//   <div
-//     style={{
-//       position: 'relative',
-//       height: '100%',
-//       width: '100%',
-//       zIndex: 1,
-//     }}
-//   >
-//     <img
-//       src={code}
-//       style={{
-//         position: 'absolute',
-//         width: 850,
-//         bottom: 0,
-//         left: '50%',
-//         transform: 'translateX(-50%)',
-//       }}
-//     />
-//     <div
-//       style={{
-//         position: 'absolute',
-//         bottom: 0,
-//         width: '100vw',
-//         height: '10rem',
-//         backgroundColor: '#61dafb',
-//         zIndex: -1,
-//       }}
-//     />
-//   </div>

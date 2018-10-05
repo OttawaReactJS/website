@@ -1,13 +1,11 @@
 import React, { Fragment } from 'react';
 import { render } from 'react-dom';
 import Footer from './components/footer';
-// import Header from './components/header';
-import NextMeetup from './components/next_meetup';
 import Section from './components/section';
-import Code from './components/code';
 import Header from './components/header';
-
-import headerCode from './assets/header-code.png';
+import Content from './components/content';
+import Next from './components/next';
+import Social from './components/social';
 
 // Global stylesheet
 import './global.styled';
@@ -16,28 +14,16 @@ const Main = () => (
   <Fragment>
     <Section>
       <Header />
-      {/* Header */}
-      {/* solid React blue-ish background */}
-      {/* Img / gif of JSX overlay */}
-      {/* Title Ottawa React + react logo */}
     </Section>
     <Section>
-      {/* Ads */}
-      {/* text location */}
-      {/* Img of event */}
+      <Content />
     </Section>
     <Section>
-      {/* Next meetup */}
-      {/* text about meetup */}
-      {/* Img/gif of code */}
+      <Next />
     </Section>
     <Section>
-      {/* Footer */}
-      {/* links to meetup, twitter, email */}
-      {/* sub footer */}
+      <Social />
     </Section>
-    // <Header />
-    <NextMeetup />
     <Footer />
   </Fragment>
 );
