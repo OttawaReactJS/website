@@ -65,7 +65,7 @@ export default function Content() {
   return (
     <Container>
       <TitleContainer>
-        <Image src={Hacktoberfest} />
+        <Image src={Hacktoberfest} alt="Hacktoberfest 2018" />
         <Title>This Month</Title>
       </TitleContainer>
       <Words>

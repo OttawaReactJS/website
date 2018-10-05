@@ -73,7 +73,7 @@ export default function Social() {
         autoPlay
         loop
         src={coding}
-        aria-label="Image of React being coded"
+        aria-label="Video of React being coded"
       />
       <Title>
         <span role="img" aria-label="woman waving">
