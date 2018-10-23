@@ -1,28 +1,95 @@
 import React from 'react';
-import {
-  BackgroundImage,
-  HeaderInner,
-  LogoWrapper,
-  Title,
-  TitleContainer,
-  Wrapper,
-} from './header.styled';
-import ReactLogo from './logo.js';
+import styled from 'styled-components';
+import code from '../../assets/c1.png';
 
-const Header = () => (
-  <Wrapper>
-    <BackgroundImage />
-    <HeaderInner>
-      <LogoWrapper>
-        <ReactLogo />
-      </LogoWrapper>
+const Link = styled.span`
+  font-family: 'Permanent Marker';
+  color: #f13a59;
+`;
+
+const T = styled.h1`
+  line-height: 7rem;
+  width: min-content;
+  text-align: right
+  font-size: 8rem;
+  user-select: none;
+  background: rgba(96, 217, 251, 0.9);
+  border-radius: 4px;
+
+
+  @media (max-width: 1300px) {
+    padding: 4rem;
+    position: absolute;
+  }
+
+  @media(max-width: 500px)  {
+    font-size: 5rem;
+    line-height: 4rem;
+    padding: 2rem;
+  }
+`;
+
+const Container = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+`;
+
+const TitleContainer = Container.extend`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  width: auto;
+  z-index: 1;
+`;
+
+const MeetupLink = Container.withComponent('a').extend`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 100px;
+  max-height: 100px;
+  background: #24272e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  text-decoration: none;
+`;
+
+const Code = Container.extend`
+  max-height: 750px;
+  user-select: none;
+  z-index: -1;
+  width: auto;
+
+  @media (max-width: 500px) {
+    height: 400px;
+  }
+
+  img {
+    max-height: 100%;
+  }
+`;
+
+export default function Title() {
+  return (
+    <Container>
       <TitleContainer>
-        <Title>Empathy.</Title>
-        <Title>Inclusion. </Title>
-        <Title>Empowerment.</Title>
+        <T>React Ottawa</T>
+        <Code>
+          <img src={code} alt="some React code" aria-label="some React code" />
+        </Code>
       </TitleContainer>
-    </HeaderInner>
-  </Wrapper>
-);
-
-export default Header;
+      <MeetupLink href="https://www.meetup.com/Ottawa-ReactJS-Meetup/">
+        <Link>Meetup.com</Link>
+      </MeetupLink>
+    </Container>
+  );
+}

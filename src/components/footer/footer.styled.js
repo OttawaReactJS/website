@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 4rem;
-  background-color: ${colors.purple.light};
+  background-color: ${colors.blue};
 `;
 
 export const MadeWith = styled.span`
@@ -25,12 +25,13 @@ export const MadeWith = styled.span`
 export const Love = styled.span.attrs({
   children: '❤️',
   'aria-label': 'heart',
-  role: 'emoji',
+  role: 'img',
 })`
   padding: 0 2px;
 `;
 
 export const Twitter = styled.a.attrs({
+  'aria-label': 'twitter link',
   href: 'https://twitter.com/ReactOttawa',
   children: <i className="icon ion-logo-twitter" />,
 })`
