@@ -1,12 +1,10 @@
 import React, { Fragment } from 'react';
 import { render } from 'react-dom';
 import Footer from './components/footer';
-import Section from './components/section';
 import Header from './components/header';
-import Content from './components/content';
 import Next from './components/next';
+import Section from './components/section';
 import Social from './components/social';
-
 // Global stylesheet
 import './global.styled';
 
@@ -15,9 +13,9 @@ const Main = () => (
     <Section>
       <Header />
     </Section>
-    <Section>
+    {/* <Section>
       <Content />
-    </Section>
+    </Section> */}
     <Section>
       <Next />
     </Section>
