@@ -87,7 +87,7 @@ export default function Next() {
     <Container>
       <Map
         title="Map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4728559749233!2d-75.6962376!3d45.4199686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05ab278e6717%3A0x7638b5b0ec51f525!2s219+Laurier+Ave+W+14th+Floor%2C+Ottawa%2C+ON+K1P+5J6!5e0!3m2!1sen!2sca!4v1548897499903"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1072.1316841989812!2d-75.69088845989668!3d45.42734323868317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04fdfb178c43%3A0x2153e99f88f7fd16!2sRebel.com!5e0!3m2!1sen!2sca!4v1550414074928"
         width="600"
         height="450"
         frameBorder="0"
@@ -98,10 +98,10 @@ export default function Next() {
         <Title>Next Meetup</Title>
         <Where>
           Come and join us for our next Meetup on{' '}
-          <Date>January 31st, 2019 </Date> from <Time>6:30pm to 8:30pm</Time>!
+          <Date>February 28th, 2019 </Date> from <Time>6:30pm to 8:30pm</Time>!
           This month we are holding the Meetup at{' '}
-          <Location href="https://goo.gl/maps/cizNkdJSTjm">
-            CDS Offices - 219 Laurier, 14th Floor · Ottawa
+          <Location href="https://goo.gl/maps/UmaZ6uUp2Zw">
+            377 Dalhousie St · Ottawa
           </Location>
         </Where>
       </Content>
