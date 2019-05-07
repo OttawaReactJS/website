@@ -87,7 +87,7 @@ export default function Next() {
     <Container>
       <Map
         title="Map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.338392225481!2d-75.9058786844466!3d45.3419809790997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd1ff925e787761%3A0xe7478137a8cf92ef!2sYou.i+TV!5e0!3m2!1sen!2sca!4v1552950312957"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.3430595198547!2d-75.71174278444465!3d45.4024212791002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0434558c4397%3A0x7a26bedbe28cc438!2sAdobe+Systems+Canada!5e0!3m2!1sen!2sca!4v1557248522635!5m2!1sen!2sca"
         width="600"
         height="450"
         frameBorder="0"
@@ -97,11 +97,11 @@ export default function Next() {
       <Content>
         <Title>Next Meetup</Title>
         <Where>
-          Come and join us for our next Meetup on{' '}
-          <Date>March 28th, 2019 </Date> from <Time>6:30pm to 8:30pm</Time>!
-          This month we are holding the Meetup at{' '}
-          <Location href="https://goo.gl/maps/EYVrr4gN4GK2">
-            307 Legget Dr · Kanata, ON
+          Come and join us for our next Meetup on <Date>May 30th, 2019 </Date>{' '}
+          from <Time>6:30pm to 8:30pm</Time>! This month we are holding the
+          Meetup at{' '}
+          <Location href="https://goo.gl/maps/hhuQGbbKkcHddHZ77">
+            Adobe Systems Canada - 343 Preston St · Ottawa, ON
           </Location>
         </Where>
       </Content>

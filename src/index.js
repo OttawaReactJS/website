@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { render } from 'react-dom';
 import Footer from './components/footer';
 import Header from './components/header';
+import Kent from './components/kent';
 import Next from './components/next';
 import Section from './components/section';
 import Social from './components/social';
@@ -16,6 +17,7 @@ const Main = () => (
     {/* <Section>
       <Content />
     </Section> */}
+    <Kent />
     <Section>
       <Next />
     </Section>
