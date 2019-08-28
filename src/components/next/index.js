@@ -87,7 +87,7 @@ export default function Next() {
     <Container>
       <Map
         title="Map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.338392225481!2d-75.9058786844466!3d45.3419809790997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd1ff925e787761%3A0xe7478137a8cf92ef!2sYou.i+TV!5e0!3m2!1sen!2sca!4v1552950312957"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11217.756238971991!2d-75.9110213!3d45.3399486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbdcdcef712110bf!2sQlik!5e0!3m2!1sen!2sca!4v1566945753320!5m2!1sen!2sca"
         width="600"
         height="450"
         frameBorder="0"
@@ -98,10 +98,10 @@ export default function Next() {
         <Title>Next Meetup</Title>
         <Where>
           Come and join us for our next Meetup on{' '}
-          <Date>March 28th, 2019 </Date> from <Time>6:30pm to 8:30pm</Time>!
+          <Date>August 29th, 2019 </Date> from <Time>6:30pm to 8:30pm</Time>!
           This month we are holding the Meetup at{' '}
-          <Location href="https://goo.gl/maps/EYVrr4gN4GK2">
-            307 Legget Dr · Kanata, ON
+          <Location href="https://goo.gl/maps/W6Bjk3fY2CGKkVZ16">
+            390 March Rd · Kanata, ON
           </Location>
         </Where>
       </Content>
