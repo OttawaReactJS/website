@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from '../utils/colors';
 
-import Hacktoberfest from '../../assets/Hacktoberfest_2018_banner4_522x522.png';
-
 const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -43,7 +41,7 @@ const Title = styled.h2`
 `;
 
 const Image = styled.img`
-  max-width: 350px;
+  max-width: 100%;
   box-shadow: 20px 20px 0px 0px ${colors.blue};
 
   @media (max-width: 400px) {
@@ -65,8 +63,8 @@ export default function Content() {
   return (
     <Container>
       <TitleContainer>
-        <Image src={Hacktoberfest} alt="Hacktoberfest 2018" />
-        <Title>This Month</Title>
+        <Image src="/static/hacktoberfest-2019.png" alt="Hacktoberfest 2019" />
+        {/*<Title>This Month</Title>*/}
       </TitleContainer>
       <Words>
         We are doing{' '}

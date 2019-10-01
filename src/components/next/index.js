@@ -57,9 +57,9 @@ const Highlight = styled.span`
   color: ${colors.blue};
 `;
 
-const Date = Highlight.extend``;
-const Time = Highlight.extend``;
-const Location = Highlight.withComponent('a').extend``;
+const Date = styled(Highlight)``;
+const Time = styled(Highlight)``;
+const Location = styled(Highlight)``;
 
 const Where = styled.p`
   border-radius: 4px;
@@ -87,7 +87,7 @@ export default function Next() {
     <Container>
       <Map
         title="Map"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11217.756238971991!2d-75.9110213!3d45.3399486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbdcdcef712110bf!2sQlik!5e0!3m2!1sen!2sca!4v1566945753320!5m2!1sen!2sca"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4834018041433!2d-75.69773268402132!3d45.41975597910041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05a3815c9b2f%3A0x9a43ed8d9b9ad15a!2sSurveyMonkey!5e0!3m2!1sen!2sca!4v1569943002585!5m2!1sen!2sca"
         width="600"
         height="450"
         frameBorder="0"
@@ -98,10 +98,10 @@ export default function Next() {
         <Title>Next Meetup</Title>
         <Where>
           Come and join us for our next Meetup on{' '}
-          <Date>August 29th, 2019 </Date> from <Time>6:30pm to 8:30pm</Time>!
-          This month we are holding the Meetup at{' '}
-          <Location href="https://goo.gl/maps/W6Bjk3fY2CGKkVZ16">
-            390 March Rd · Kanata, ON
+          <Date>October 24th, 2019 </Date> from <Time>6:30pm to 9:30pm</Time>!
+          This month we are holding the Meetup at SurveyMonkey{' '}
+          <Location as="a" href="https://goo.gl/maps/W6Bjk3fY2CGKkVZ16">
+            200 Laurier Ave W · 5th floor
           </Location>
         </Where>
       </Content>

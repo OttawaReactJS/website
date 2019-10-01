@@ -1,6 +1,6 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-injectGlobal`
+export default createGlobalStyle`
     @import url('https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css');
     /* Roboto */
     /* latin-ext */

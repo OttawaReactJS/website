@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import code from '../../assets/c1.png';
 
 const Link = styled.span`
   font-family: 'Permanent Marker';
@@ -38,7 +37,7 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-const TitleContainer = Container.extend`
+const TitleContainer = styled(Container)`
   position: relative;
   display: flex;
   align-items: center;
@@ -48,7 +47,7 @@ const TitleContainer = Container.extend`
   z-index: 1;
 `;
 
-const MeetupLink = Container.withComponent('a').extend`
+const MeetupLink = styled(Container)`
   position: absolute;
   left: 0;
   bottom: 0;
@@ -63,7 +62,7 @@ const MeetupLink = Container.withComponent('a').extend`
   text-decoration: none;
 `;
 
-const Code = Container.extend`
+const Code = styled(Container)`
   max-height: 750px;
   user-select: none;
   z-index: -1;
@@ -84,10 +83,14 @@ export default function Title() {
       <TitleContainer>
         <T>React Ottawa</T>
         <Code>
-          <img src={code} alt="some React code" aria-label="some React code" />
+          <img
+            src="/static/c1.png"
+            alt="some React code"
+            aria-label="some React code"
+          />
         </Code>
       </TitleContainer>
-      <MeetupLink href="https://www.meetup.com/Ottawa-ReactJS-Meetup/">
+      <MeetupLink as="a" href="https://www.meetup.com/Ottawa-ReactJS-Meetup/">
         <Link>Meetup.com</Link>
       </MeetupLink>
     </Container>
