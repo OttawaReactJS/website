@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import colors from '../utils/colors';
-import coding from '../../assets/coding.webm';
 
 const Container = styled.div`
   position: relative;
@@ -72,7 +71,7 @@ export default function Social() {
       <video
         autoPlay
         loop
-        src={coding}
+        src="/static/coding.webm"
         aria-label="Video of React being coded"
       />
       <Title>
